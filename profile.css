@@ -1,0 +1,8 @@
+.profile{
+    width: 200px;
+    height: 150px;
+    border-radius: 5em;
+    display: block;
+    float: right;
+    margin: 20px;
+}

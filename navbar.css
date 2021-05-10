@@ -1,0 +1,115 @@
+body{
+    width: 100%;
+    margin:0 auto;
+    height:100%;
+}         
+#pimg{
+    display:none;
+}
+#profiledisplay{
+    display:block;
+    width:200px;
+    height:200px;
+    margin:10px auto;
+    border-radius:50%;
+}
+/* #log{
+    display: none;
+}
+#sign{
+    display:none;
+} */
+fieldset{
+    box-shadow:1px 1px 10px 1px #888888;
+    background-color: white;
+    border-radius: 0.1px;
+    padding-bottom: 30px;
+    border-style: none;
+    opacity: 0.9;
+}
+legend{
+    font-size: 30px;
+    margin-left: 90px;
+}
+.login-signup{
+    top: 200px;
+    left: 40%;
+    position: absolute;
+    z-index: 1;
+}
+input{
+    height: 40px;
+    width: 250px;
+    border-style: none;
+    font-size: 20px;
+}
+.button{
+    margin-left: 32%;
+    height: 30px;
+    width: 110px;
+    border-radius: 0.6em;
+    border-style: none;
+    background-color:orange;
+}
+
+.icon{
+    background-color: orange;
+    width: 30px;
+    padding-left: 20px;
+}
+table{
+    border-collapse: separate;
+    border-spacing: 0 15px;
+}
+td{
+    border-style: none;
+    border-width: 0.5px;
+    border-radius: 0.1em;
+}
+.under{
+    border-bottom: solid;
+    border-color: black;
+}
+#signup{
+    width: 300px;
+}
+#signup td{
+    border-bottom: solid;
+}
+button:hover{
+    cursor: pointer;
+}
+.fa-facebook {
+    background: orange;
+    color:black;
+    padding: 10px 20px;
+}
+.fa-google {
+    background: orange;
+    color:black;
+    padding: 10px 20px;
+}
+.fa-twitter {
+    background: orange;
+    color:black;
+    padding: 10px 20px;
+}
+.heading{
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+/* .link{
+    color: rgba(255, 255, 255, 0.452);
+    text-decoration: none;
+    margin-left: 10px;
+}
+.link:hover{
+    color: white;
+    transition: 0.1s;
+}
+.li{
+    color: white;
+} */
+#profiledisplay{
+    padding: 20px;
+}

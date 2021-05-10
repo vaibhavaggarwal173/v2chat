@@ -1,0 +1,126 @@
+<nav id="nav-bar" class="navbar fixed-top navbar-expand-lg bg-light bg-gradient">
+    <div class="container-fluid">
+      <a href="index.php"><img height="40px" src="images/logo.png"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link link-dark" aria-current="page" href="index.php">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link link-dark" aria-current="page" href="about.php">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link link-dark" aria-current="page" href="#contact">Contact Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link link-dark" href="#" id="navbarDropdown" role="button" data-bs-toggle="modal" data-bs-target="#Modal">
+              Login
+            </a>
+          </li>
+         </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="modal fade" id="Modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-body">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel1">Login</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <br>
+          <form method="POST" id="log" onsubmit="return logcheck()">
+            <!-- <fieldset>
+             <legend>
+                 <a class="fa fa-facebook"></a>
+                 <a class="fa fa-twitter"></a>
+                 <a class="fa fa-google"></a>
+             </legend>
+            <h2>Login</h2> -->
+            <table>
+            <tr>
+            <td id="first" class="icon"><i class="fa fa-user" aria-hidden="true"></i></td>
+            <td id="first"><input type="text" id="username" name="username" placeholder=" Username" value=""></td>
+            </tr>
+            <tr>
+            <td id="second" class="icon"><i class="fa fa-key" aria-hidden="true"></i></td>
+            <td id="second"><input type="password" id="password" name="password" placeholder=" Password" value=""></td>
+            </tr>
+            <tr>
+            <td style="color:red;" id="error" colspan="2"></td>
+            </tr>
+            </table>
+            <br>
+            <!-- <button class="button" type="submit" name="login">Submit</button> -->
+            <!-- </fieldset> -->
+            <p style="text-align: center;">Don't have an account?<a href="#" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#Modal2"  data-bs-slide="next">Sign up</a></p>
+        </form>
+           <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="submit" form="log" name="login" class="btn btn-primary">Login</button>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>  
+    <div class="modal fade" id="Modal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-body">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel1">Sign up</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <br>
+            <form enctype="multipart/form-data" method="POST" id="sign" onsubmit="return signcheck()">
+                <!-- <fieldset>
+                     <legend>
+                         <a class="fa fa-facebook"></a>
+                         <a class="fa fa-twitter"></a>
+                         <a class="fa fa-google"></a>
+                     </legend>
+                    <h2>SignUp</h2> -->
+                <table style="margin: 0 auto;">
+                <tr>
+                <td><input type="text" id="name" name="name" placeholder="Name" value=""></td>
+                <td rowspan="6" style="border-left-style:solid;border-width:5px;"></td>
+                <td rowspan="5" style="padding:20px;"><img id="profiledisplay" src="images/select.jpg" onclick="triggerClick()"/></td>
+                </tr>
+                <tr>
+                <td><input type="email" id="email" name="email" placeholder="Email" value=""></td>
+                </tr>
+                <tr>
+                    <td><input type="text" id="username1" name="username" placeholder="Username" value=""></td>
+                    
+                   <td><input type="file" id="pimg" name="profile" value="" aria-label="File browser example" onchange="display(this)"></td>
+                </tr>
+                <tr>
+                    <td style="color:red;" id="msg2"></td>
+                </tr>
+                <tr>
+                    <td><input type="password" id="password1" name="password" placeholder="Password" value=""></td>
+                </tr>
+                <tr>
+                    <td style="color:red;" id="msg"></td>
+                    <td style="text-align:center"><label>Profile Pic</label></td>
+                </tr>
+                </table>
+                <br>
+                <!-- <button class="button" name="signup" type="submit">Submit</button> -->
+                    <!-- </fieldset> -->
+                    <p style="text-align: center;">Already have an account?<a href="#" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#Modal"  data-bs-slide="prev">Login</a></p>
+            </form>
+             <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="submit" form="sign" name="signup" class="btn btn-primary">Sign up</button>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
